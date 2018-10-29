@@ -18,14 +18,15 @@
 
 			(fn [response] 
 				(completion 
-					(:temp
+					(- (:temp
 						(:main
 							(json/read-str 
 								(:body response) :key-fn keyword
 							)
 							
 						)
-					)
+					) 274) 
+					
 				)
 			)
 			; Raise callback
@@ -37,7 +38,7 @@
 
 ; Print the temperature
 (defn print_temperature [temperature]
-	(println "Temperature is: " temperature "ºF")
+	(println "Temperature is: " temperature "ºC")
 )
 
 (defn -main
