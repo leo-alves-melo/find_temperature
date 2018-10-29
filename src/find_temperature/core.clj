@@ -1,12 +1,12 @@
 ; Dependencies 
 (ns find-temperature.core
-  (:gen-class))
+	(:gen-class))
 
 (ns find-temperature.core
-  (:require [clj-http.client :as client]))
+	(:require [clj-http.client :as client]))
 
 (ns find-temperature.core
-  (:require [clojure.data.json :as json]))
+	(:require [clojure.data.json :as json]))
 
 ; Returns the temperature of the city in the completion function 
 (defn get_temperature [city completion] 
@@ -28,7 +28,7 @@
 					)
 				)
 			)
-			;; raise callback
+			; Raise callback
 			(fn [exception] (println "exception message is: " (.getMessage exception)))
 		)
 	)

@@ -1,6 +1,14 @@
 # find_temperature
 
-Find temperature using HTTP request in Clojure
+Find temperature using HTTP request in Clojure.
+
+## Running code
+
+In project root, run "lein run city_name".
+
+## TODO
+
+Bug fix: Cities with more than one word will not be found.
 
 ## License
 
